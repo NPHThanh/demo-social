@@ -1,0 +1,39 @@
+.quotes{
+    height: 800px;
+    border-bottom: 2px solid var(--secondary-color);
+    font-family: var(--primary-font);
+    padding-top: 10%;
+    padding-left: 138px ;
+    &-title{
+        >h2{
+            font-size: 110px;
+            font-weight: 300; 
+        }
+
+        >p>strong{
+            font-size: 80px;
+            font-weight: 300;
+        }
+        >h5{
+            line-height: 5;
+            font-weight: bold;
+        }
+        >p,h5{
+            font-size: 26px;
+            font-weight: 300;
+            width: 80%; 
+        }
+    }
+}
+
+@media only screen and (max-width: 1024px){
+    .quotes{
+        padding-top: 5%;
+    }
+}
+
+@media only screen and (max-width: 769px){
+    .quotes-title > p{
+        font-size: 20px;
+    }
+}

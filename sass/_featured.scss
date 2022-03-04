@@ -1,0 +1,26 @@
+.featured-subtitle{
+    font-size: 25px;
+    text-transform: uppercase;
+    font-family: var(--primary-font);
+    width: fit-content;
+    margin-left: 35%;
+    position: static;
+ 
+}
+
+.featured-title{
+    
+    font-size: 110px;
+    font-family: var(--primary-font);
+}
+
+.featured{
+    text-align: center;
+    padding-top: 90px;
+    line-height: 0.7;
+}
+@media only screen and (max-width: 1025px){
+    .featured-subtitle{
+        margin-left: 28%;
+    }
+}

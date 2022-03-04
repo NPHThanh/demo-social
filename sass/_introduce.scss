@@ -1,0 +1,244 @@
+.introduce{
+    max-width: 100%;
+    height: 850px;
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+   &-content{
+     display: grid;
+     grid-template-columns: 900px 285px;
+     grid-template-rows: repeat(2,320px) ;
+     column-gap: 30px;
+     row-gap: 50px;
+     width:fit-content ;
+     padding: 60px 150px 55px 100px;
+   }
+
+   &-content>div>img{
+       width: 285px;
+       height: 320px;
+       opacity: 0.7;
+   }
+   &-content>&-text{
+       padding-left: 30%;
+       margin: 0  auto;
+       text-align: center;
+   }
+   &-content>&-text>h3{
+       font-family: var(--secondary-font);
+       font-size: 27px;
+       line-height: 6;
+   }
+   &-content>&-text>h4{
+    border-bottom: 1px solid;
+    line-height: 1.5;
+   }
+   &-content>&-text>h4,strong{
+       width: fit-content;
+       font-family: var(--primary-color);
+       font-size: 50px;
+       font-weight: 300;
+       margin: 0  auto;
+   }
+}
+
+.text-style{
+    font-style: italic;
+}
+
+/**introduce team**/
+
+.introduce-team{
+    &-title{
+        margin-top: 70px;
+        height: 565px;
+        background-color: var(--secondary-color);
+        text-align: center;
+        >h4,h2{
+            color: var(--primary-color);    
+        }
+        >h4{
+            font-weight: 300;
+            line-height: 8;
+        }
+        >h2,strong{
+            font-size: 107px;
+            font-weight: 200;
+            font-family: var(--primary-font);
+        }
+    }
+
+    &-subtitle{
+        height: 280px;
+        background-color: var(--secondary-color);
+        border-top: 2px solid white;
+        >p{
+            padding-top: 60px;
+            margin: 0 auto;
+            color: var(--primary-color);
+            text-align: center;
+            width: 50%;
+            font-size: 16px;
+            font-family: var(--secondary-font);
+        }
+        >img{
+            padding-top: 80px;
+            margin: 0 auto;
+        }
+    }
+
+    &-person1{
+        display: grid;
+        height: 855px;
+        grid-template-columns: 60% 40% ;
+        border-bottom: 2px solid var(--secondary-color);
+        >img{
+            width: 100%;
+            height: 854px;
+        }
+        >.person1-content{
+            padding-left: 10px;
+            display: grid;
+            border-right: 2px solid var(--secondary-color);
+            border-left: 2px solid;
+            grid-template-rows: 40% 20% 40%;
+            text-align: center;
+            >div>h2{
+                font-family: var(--primary-font);
+                font-size: 90px;
+                font-weight: 300;
+                line-height: 2;
+            }
+            >div>h3{
+                font-size: 18px;
+                font-family: var(--secondary-font);
+                line-height: 3;
+            }
+            >div>p{
+                margin: 0 auto;
+                width: 50%;
+                font-family: var(--secondary-font);
+                font-size: 16px;
+                
+            }
+        }
+
+   
+    }
+    &-person2{
+        height: 850px;
+        display: grid;
+        grid-template-columns: repeat(2,50%);
+        border-bottom: 2px solid var(--secondary-color);
+        .person2-img{
+            background-color: var(--secondary-color);
+            height: inherit;
+                    }
+        .person2-img>img{
+            width: 386px;
+            height: 524px;
+            margin: 25% auto;
+            opacity: 0.8;
+        }
+
+        .person2-content{
+            text-align: center;
+            margin: 50% auto;
+            >p{
+                font-size: 17px;
+                font-family: var(--secondary-font);
+                width: 70%;
+                margin: 30px auto;
+                text-align: center
+            }
+            >a{
+                color:var(--secondary-color);
+                font-size: 15px;
+                font-weight: bold;
+                font-family: var(--secondary-font);
+                padding: 10px 20px 10px 20px;
+                text-decoration: none;
+                border-radius: 15px;
+                border: 2px solid var(--secondary-color);
+                margin-top: 35px;
+
+            }
+        }
+        .person2-title{
+            font-family: var(--primary-font);
+            >h2{
+                font-size: 100px;
+                display: flex;
+                justify-content: center;
+                text-align: center;
+                
+            }
+            >h2>strong{
+                font-size: 33px;
+                
+            }
+            >h3{
+                font-size: 33px;
+            }
+           
+        }
+       
+
+
+    }
+}
+@media only screen and (max-width: 1281px){
+    .introduce-content{
+        padding: 0;
+        grid-template-columns: 900px 250px;
+    }
+}
+@media only screen and (max-width: 1025px){
+    .introduce-content{
+        padding: 0;
+        grid-template-columns: 700px 250px;
+        grid-template-rows: repeat(2, 320px);
+
+        >.introduce-text > h4{
+            font-size: 40px;
+        }
+        >div>img{
+            width: 250px;
+            height: 320px;
+        }
+    }
+}
+
+@media only screen and (max-width: 769px){
+    .introduce-content{
+
+        padding: 0;
+        grid-template-columns: 500px 250px;
+        grid-template-rows: repeat(2, 320px);
+
+        >.introduce-text > h4{
+            font-size: 30px;
+        }
+        >div>img{
+            width: 200px;
+            height: 280px;
+        }
+    }
+    .introduce-team{
+        &-title{
+            margin-top: 70px;
+            height: 565px;
+            background-color: var(--secondary-color);
+            text-align: center;
+
+            >h2,strong{
+                font-size: 90px;
+
+            }
+        }
+        .person1-content > div > h2{
+            font-size: 70px;
+        }
+        .person1-content > div > p{
+            font-size: 13px;
+        }
+}}

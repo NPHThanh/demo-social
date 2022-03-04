@@ -1,0 +1,49 @@
+.projectList{
+    max-width: 80%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(2,550px);
+    grid-template-rows: 420px 628px;
+    grid-gap: 50px;
+    padding-top:55px ;
+   
+
+    &-img{
+        opacity: 0.8;
+      
+    }
+    &-name{
+        padding-bottom: 50px;
+    }
+    &-name > h3{
+        width: inherit;
+        font-size: 35px;
+        font-weight: 300;
+        font-family: var(--primary-font);
+        padding-top: 20px;
+        padding-bottom: 20px; 
+        border-bottom: 2px solid #0f5588 ; 
+    }
+    &-link{
+        
+        text-align: center;
+        font-size: 16px;
+        font-family: var(--secondary-font);
+        background-color: #0f5588;
+        text-decoration: none;
+        font-weight: 300;
+        color: white;
+        padding: 6px 30px 6px 30px;
+        border-radius: 15px;
+       
+    }
+   
+}
+@media only screen and (max-width: 1025px){
+    .projectList{
+        max-width: fit-content;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+}
