@@ -26,14 +26,42 @@
     }
 }
 
-@media only screen and (max-width: 1024px){
+@media only screen and (max-width: 1029px){
     .quotes{
-        padding-top: 5%;
+        padding-top: 10%;
+        &-title{
+            h2{
+                font-size: 90px;
+            }
+            p{
+                font-size: 20px;
+            }
+        }
     }
 }
 
 @media only screen and (max-width: 769px){
     .quotes-title > p{
         font-size: 20px;
+    }
+}
+
+@media only screen and (max-width: 500px){
+    .quotes{
+        padding-top: 20vh;
+        padding-left: 30px;
+    }
+    .quotes-title{
+        width: 100vw;
+        h2{
+            font-size: 50px;
+        }
+        p{
+            font-size: 12px;
+        }
+        h5{
+            font-size: 12px;
+        }
+       
     }
 }

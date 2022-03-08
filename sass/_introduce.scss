@@ -188,8 +188,9 @@
 }
 @media only screen and (max-width: 1281px){
     .introduce-content{
-        padding: 0;
-        grid-template-columns: 900px 250px;
+        padding-left: 30px;
+        padding-top: 100px;
+        grid-template-columns: 70vw 30vw;
     }
 }
 @media only screen and (max-width: 1025px){
@@ -207,20 +208,33 @@
         }
     }
 }
-
-@media only screen and (max-width: 769px){
+@media only screen and (max-width: 1029px){
     .introduce-content{
-
-        padding: 0;
-        grid-template-columns: 500px 250px;
+        padding-left: 30px;
+        padding-top: 100px;
+        grid-template-columns: 700px 250px;
+        .introduce-text > h4,strong{
+            font-size: 30px;
+          
+        }
+        >div>img{
+            width: 200px;
+            height: 250px;
+        }
+    }
+}
+@media only screen and (max-width: 955px){
+    .introduce-content{
+        padding-left: 50px;
+        grid-template-columns: 65vw 50vw;
         grid-template-rows: repeat(2, 320px);
 
         >.introduce-text > h4{
             font-size: 30px;
         }
         >div>img{
-            width: 200px;
-            height: 280px;
+            width: 150px;
+            height: 200px;
         }
     }
     .introduce-team{
@@ -242,3 +256,81 @@
             font-size: 13px;
         }
 }}
+
+@media only screen and (max-width: 955px){
+
+}
+
+@media only screen and (max-width: 500px){
+    .introduce{
+        height: 50vh;
+    }
+        .introduce-content{
+            padding-top: 10px;
+            grid-template-columns: 50vw 25vw;
+            grid-template-rows: repeat(2, 30vw);
+            .introduce-text{
+                h3{
+                    font-size: 16px;
+                    line-height: 2;
+                }
+            }
+            >.introduce-text > h4,strong{
+                
+                font-size: 12px;
+            }
+            >div>img{
+                width: 25vw;
+                height: 150px;
+            }
+        }
+    
+            .introduce-team{
+                &-title{
+                h4{ 
+                    padding-top: 20vh;
+                    font-size: 20px;
+                    line-height: 4;
+                }
+                h2,strong{
+                    font-size: 40px;
+                }
+                }
+                &-subtitle{
+                    p{
+                        font-size: 12px;
+                    }
+                    
+                }
+        }   
+
+            .introduce-team-person1{
+                background-image: url('../images/img5.jpg');
+                background-position: center center;
+                background-size: cover;
+                background-blend-mode: overlay;
+                display: block;
+                .person1-content{
+                    display: block;
+                    color: white;
+                }
+                img{
+                    display: none;
+                }
+            }
+            .introduce-team-person2{
+                background-image: url('../images/person2.jpg');
+                background-position: center center;
+                background-size: cover;
+                height: inherit;
+                display: inline-block;
+           
+                img{
+                    display: none;
+                }
+            }
+            }
+    
+    
+    
+

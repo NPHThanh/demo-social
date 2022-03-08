@@ -30,7 +30,7 @@
 }
 
 #toolbar-icon{
-    position: fixed;
+    position: absolute;
     cursor: pointer;
 }
 
@@ -68,15 +68,26 @@
         cursor: pointer;
     }
 }
+@media only screen and (max-width: 1029px){
+    .header-toolbar {
+        display: flex;
+        justify-content: space-between;
+        gap: 0 30px;
+        align-items: center;
+        max-width: 60vw;
+        margin: 0;
+    }
 
+
+}
 @media only screen and (max-width: 769px){
     .header-toolbar{
         margin: 0;
-        max-width: 100%;
+        max-width: 70%;
         #logo{
-            width: 100px;
+            width: 150px;
             height: 70px;
-            padding-left:10px;
+            padding-left:50px;
         }
         .header-search>input{
             width: 100px;
@@ -84,6 +95,17 @@
     }
     
 
+}
+
+@media only screen and (max-width: 500px){
+    .header-search{
+        display: none;
+    }
+    .header-toolbar{
+        #logo{
+            margin-left: 60vw;
+        }
+    }       
 }
     
 

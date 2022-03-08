@@ -19,8 +19,20 @@
     padding-top: 90px;
     line-height: 0.7;
 }
-@media only screen and (max-width: 1025px){
+@media only screen and (max-width: 1029px){
     .featured-subtitle{
         margin-left: 28%;
+    }
+}
+
+@media only screen and (max-width: 500px){
+    .featured{
+        .featured-title{
+            font-size: 60px;
+        }
+        .featured-subtitle{
+            font-size: 20px;
+            margin-left: 18%;
+        }
     }
 }

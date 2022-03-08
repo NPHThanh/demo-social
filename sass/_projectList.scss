@@ -39,11 +39,21 @@
     }
    
 }
-@media only screen and (max-width: 1025px){
+@media only screen and (max-width: 1029px){
     .projectList{
         max-width: fit-content;
         display: flex;
         flex-direction: column;
         justify-content: center;
+    }
+}
+
+@media only screen and (max-width: 500px){
+    .projectList{
+        &-name{
+            h3{
+                font-size: 30px;
+            }
+        }
     }
 }

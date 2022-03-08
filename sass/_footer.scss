@@ -42,8 +42,18 @@
     }
 }
 
-@media only screen and (max-width: 769px){
+@media only screen and (max-width: 900px){
     .footer-link{
         padding: 0px 10px 0px 10px;
+    }
+}
+
+@media only screen and (max-width: 500px){
+    .footer{
+        height: inherit;
+        padding-bottom: 20px;
+        &-link{
+            margin: 0 auto;
+        }
     }
 }
